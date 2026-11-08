@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f4c81">
+  <meta name="description" content="Convertisseur d'unités simple : distances, vitesses, masses, températures.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Convertisseur">
+  <title>Convertisseur</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Convertisseur</h1>
+  </header>
+
+  <main>
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Catégories"></nav>
+
+    <section class="card" aria-label="Conversion">
+      <div class="field">
+        <label for="from-value">De</label>
+        <input id="from-value" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" value="1">
+        <select id="from-unit" aria-label="Unité de départ"></select>
+      </div>
+
+      <button id="swap" class="swap" type="button" aria-label="Inverser les unités" title="Inverser les unités">⇅</button>
+
+      <div class="field">
+        <label for="result">Vers</label>
+        <output id="result" for="from-value from-unit to-unit" aria-live="polite"></output>
+        <select id="to-unit" aria-label="Unité d'arrivée"></select>
+      </div>
+
+      <p class="summary" id="summary"></p>
+      <button id="copy" class="copy" type="button">Copier le résultat</button>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

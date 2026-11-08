@@ -1,0 +1,14 @@
+{
+  "name": "convertisseur",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Convertisseur d'unités simple, mobile et hors ligne (PWA sans framework)",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 8000"
+  }
+}
