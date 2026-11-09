@@ -30,6 +30,7 @@ export const CATEGORIES = [
       { id: 'kt', label: 'Nœud', symbol: 'kt', factor: 1852 / 3600 },
       { id: 'mph', label: 'Mile par heure', symbol: 'mph', factor: 0.44704 },
       { id: 'fts', label: 'Pied par seconde', symbol: 'ft/s', factor: 0.3048 },
+      { id: 'kfth', label: 'Millier de pieds par heure', symbol: 'kft/h', factor: 304.8 / 3600 },
     ],
   },
   {

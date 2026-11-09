@@ -20,6 +20,9 @@ test('1 kt = 0,514444 m/s', () => close(convert(1, 'speed', 'kt', 'ms'), 0.51444
 test('1 m/s = 1,943844 kt', () => close(convert(1, 'speed', 'ms', 'kt'), 1.9438444924, 1e-9));
 test('100 km/h = 27,7778 m/s', () => close(convert(100, 'speed', 'kmh', 'ms'), 27.7777777778));
 test('60 mph = 96,56064 km/h', () => close(convert(60, 'speed', 'mph', 'kmh'), 96.56064));
+test('1 kft/h = 0,0846667 m/s', () => close(convert(1, 'speed', 'kfth', 'ms'), 0.0846666667, 1e-9));
+test('1 kft/h = 1000 ft/h = 1/3,6 ft/s', () => close(convert(3.6, 'speed', 'kfth', 'fts'), 1));
+test('1 kt = 6,076 kft/h', () => close(convert(1, 'speed', 'kt', 'kfth'), 6.076115486, 1e-9));
 
 // Masses
 test('1 lb = 453,59237 g', () => close(convert(1, 'mass', 'lb', 'g'), 453.59237));
